@@ -1,0 +1,334 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Categories",
+            "name": "category",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Actuals",
+            "name": "actuals",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Targets",
+            "name": "targets",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Tooltips",
+            "name": "tooltips",
+            "kind": "Measure"
+        }
+    ],
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "category": {
+                        "max": 1
+                    },
+                    "actuals": {
+                        "max": 1
+                    },
+                    "targets": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {}
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "actuals"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "targets"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "tooltips"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "objects": {
+        "yAxis": {
+            "displayName": "Y Axis",
+            "properties": {
+                "show": {
+                    "displayName": "Show Y Axis",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "textColor": {
+                    "displayName": "Y Axis Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Font Size",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                },
+                "maxWidth": {
+                    "displayName": "Max Width",
+                    "type": {
+                        "integer": true
+                    }
+                }
+            }
+        },
+        "xAxis": {
+            "displayName": "X Axis",
+            "properties": {
+                "show": {
+                    "displayName": "Show X Axis",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "textColor": {
+                    "displayName": "X Axis Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Font Size",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                }
+            }
+        },
+        "barSettings": {
+            "displayName": "Bar Settings",
+            "properties": {
+                "targetsLineStroke": {
+                    "displayName": "Targets Line Stroke",
+                    "type": {
+                        "integer": true
+                    }
+                },
+                "targetsColor": {
+                    "displayName": "Targets Line Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "actualsColor": {
+                    "displayName": "Actuals Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "setMinBarHeight": {
+                    "displayName": "Auto Adjust Bar Height",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "height": {
+                    "displayName": "Min Height",
+                    "type": {
+                        "integer": true
+                    },
+                    "filterState": true
+                }
+            }
+        },
+        "dataLabels": {
+            "displayName": "Data Labels",
+            "properties": {
+                "show": {
+                    "displayName": "Show",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Font Size",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                },
+                "actualsTextColor": {
+                    "displayName": "Actuals Text Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "targetsTextColor": {
+                    "displayName": "Targets Text Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "targetsAlignBarLabels": {
+                    "displayName": "Targets Align Right",
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        },
+        "units": {
+            "displayName": "Tooltips Settings",
+            "properties": {
+                "decimalPlaces": {
+                    "displayName": "Decimals",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "legend": {
+            "displayName": "Legend",
+            "properties": {
+                "show": {
+                    "displayName": "Show",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "position": {
+                    "displayName": "Position",
+                    "type": {
+                        "enumeration": [
+                            {
+                                "displayName": "Top",
+                                "value": "Top"
+                            },
+                            {
+                                "displayName": "Bottom",
+                                "value": "Bottom"
+                            },
+                            {
+                                "displayName": "Right",
+                                "value": "Right"
+                            },
+                            {
+                                "displayName": "Left",
+                                "value": "Left"
+                            },
+                            {
+                                "displayName": "Top Center",
+                                "value": "TopCenter"
+                            },
+                            {
+                                "displayName": "Bottom Center",
+                                "value": "BottomCenter"
+                            },
+                            {
+                                "displayName": "Right Center",
+                                "value": "RightCenter"
+                            },
+                            {
+                                "displayName": "Left Center",
+                                "value": "LeftCenter"
+                            }
+                        ]
+                    }
+                },
+                "showTitle": {
+                    "displayName": "Title",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "titleText": {
+                    "displayName": "Legend name",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "labelColor": {
+                    "displayName": "Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Text size",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "supportsHighlight": true,
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        },
+        "roles": [
+            "tooltips"
+        ]
+    },
+    "drilldown": {
+        "roles": [
+            "category"
+        ]
+    },
+    "sorting": {
+        "default": {}
+    }
+}

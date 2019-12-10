@@ -1,0 +1,54 @@
+.visual-targetsVsActuals6B2DE8CAFFA3417997A32E35E26567E7_DEBUG {
+  
+  
+  
+  
+  
+}
+.visual-targetsVsActuals6B2DE8CAFFA3417997A32E35E26567E7_DEBUG .clearCatcher {
+  fill-opacity: 0;
+}
+.visual-targetsVsActuals6B2DE8CAFFA3417997A32E35E26567E7_DEBUG .overflowingText {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+.visual-targetsVsActuals6B2DE8CAFFA3417997A32E35E26567E7_DEBUG .legend .navArrow {
+  fill: #333333;
+  cursor: pointer;
+  
+  stroke: #FFF;
+  stroke-width: 2px;
+}
+.visual-targetsVsActuals6B2DE8CAFFA3417997A32E35E26567E7_DEBUG .data-labels {
+  font-size: 12px;
+  text-anchor: middle;
+  font-family: helvetica, arial, sans-serif;
+  pointer-events: none;
+}
+.visual-targetsVsActuals6B2DE8CAFFA3417997A32E35E26567E7_DEBUG p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.visual-targetsVsActuals6B2DE8CAFFA3417997A32E35E26567E7_DEBUG p em {
+  background: yellow;
+  padding: 5px;
+}
+.visual-targetsVsActuals6B2DE8CAFFA3417997A32E35E26567E7_DEBUG .barChart {
+  text-anchor: inherit;
+}
+.visual-targetsVsActuals6B2DE8CAFFA3417997A32E35E26567E7_DEBUG .xAxis path {
+  display: none;
+}
+.visual-targetsVsActuals6B2DE8CAFFA3417997A32E35E26567E7_DEBUG ::-webkit-scrollbar {
+  width: 5px;
+}
+.visual-targetsVsActuals6B2DE8CAFFA3417997A32E35E26567E7_DEBUG ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.visual-targetsVsActuals6B2DE8CAFFA3417997A32E35E26567E7_DEBUG ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}

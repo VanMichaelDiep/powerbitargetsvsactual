@@ -1,0 +1,14 @@
+{
+  "name": "visual",
+  "dependencies": {
+    "@types/d3": "^3.5.41",
+    "d3": "^3.5.17",
+    "powerbi-models": "^1.1.0",
+    "powerbi-visuals-utils-chartutils": "^1.5.1",
+    "powerbi-visuals-utils-dataviewutils": "^1.2.0",
+    "powerbi-visuals-utils-formattingutils": "^3.1.0",
+    "powerbi-visuals-utils-interactivityutils": "^4.2.0",
+    "powerbi-visuals-utils-svgutils": "^1.2.0",
+    "powerbi-visuals-utils-typeutils": "^1.2.0"
+  }
+}
